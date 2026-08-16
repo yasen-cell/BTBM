@@ -56,14 +56,14 @@ sc.metabolism <- function(countexp, method = "VISION", imputation = F, ncores = 
   }
   signature_exp
 }
-# Load single cell transcriptomic data (e.g., Mouse Liver, Melanoma or HNSCC)
-# The loaded object "single cell data" should be a matrix with genes in rows and samples in columns.
-load("/single_cell.rda")
+# Load spatial transcriptomic data (e.g., Human Striatum or Mouse SubNigra)
+# The loaded object "spatial data" should be a matrix with genes in rows and samples in columns.
+load("/spatial.rda")
 
 # Infer metabolic pathway activity using scMetabolism
 # method can be one of: "AUCell", "GSVA", "ssGSEA", or "VISION"
 metabolism.matrix <- sc.metabolism(
-    countexp = single_cell,
+    countexp = spatial,
     method = "AUCell",          # change as needed
     imputation = F,
     ncores = 2,
