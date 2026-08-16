@@ -13,6 +13,7 @@ This project systematically benchmarks **eight transcriptome-based metabolic inf
 
 ## Repository Structure
 
+```
 BTBM/
 ├── README.md                         # This file
 ├── src/                              # Core scripts for running each method
@@ -34,5 +35,6 @@ BTBM/
 │       └── run_Compass.sh
 └── analysis/                         # Downstream analysis scripts (to be added)
     └── (empty in this initial release)
+```
 
 
