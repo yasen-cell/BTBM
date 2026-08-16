@@ -12,7 +12,7 @@ load("data/human_blood.rda")    # medium for human samples (used for all cells)
 
 # Load single-cell expression data
 # Format: rows = genes (human gene symbols), columns = cells
-load("sc_data.rda")   # object `sc_expr` is a gene x cell matrix
+load("sc_data.rda")   # object `sc_data` is a gene x cell matrix
 
 # Calculate reaction scores from single-cell expression
 scores <- calculate_reaction_score(sc_data)
